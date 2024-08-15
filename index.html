@@ -1,0 +1,952 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Steve Szymanski's Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="robots" content="all,follow" /> -->
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devi
+    con.min.css">
+    <!-- Google fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:400,300,700"
+      />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/vendor/glightbox/css/glightbox.min.css" /> -->
+    <!-- Theme stylesheet-->
+    <link rel="stylesheet" href="/css/style.blue.css" id="theme-stylesheet" />
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/css/custom.css" />
+    <!-- Animation stylesheet -->
+    <link rel="stylesheet" href="/css/animations.css" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/img/LONG-LOST GAMES ICE FONT.png" />
+    <!-- Page loader -->
+    <style> .loader {
+      position: fixed;
+      background-color: linear-gradient(-39deg, #121018, #250d5c);
+      opacity: 1;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    </style>
+    
+  </head>
+  <body>
+  <div class="loader">
+  </div>
+    <div class="overflow">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand navbar-static-top tech">
+        <div class="d-block">
+          <div class="row mt-1 pt-1 mt-lg-2">
+            <div class="col-6 pt-1">
+              <a class=" ms-1 ms-lg-3 ms-md-1 hidden" href="#">
+                <img
+                class="logo"
+                src="/img/LogoSoftWhite.png"
+                alt="Steve Szymanski's Logo"
+                title="steveszymanski.com"
+                />
+              </a>
+            </div>
+            <div class="col-6 d-flex justify-content-end mt-1 pe-lg-4">
+              <div class="hiddenSecond">
+                <a class="navbar-button lead" href="#about" title="About Me">About</a>
+              </div>
+              <div class="hiddenThird">
+                <a class="navbar-button lead" href="#projects" title="My Work">Portfolio</a>
+              </div>
+              <div class="hiddenFourth">
+                <a class="navbar-button lead d-none d-lg-block" href="#portfolio" title="Coding Challenges">Code+</a>
+              </div>
+              <div class="hiddenFifth">
+                <a class="navbar-button lead" href="#contact" title="Contact Me">Contact</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </nav>  
+      <!-- HERO SECTION-->
+      <section
+        class="hero bg-gradient text-white d-flex align-items-center"
+        >
+        <div class="container mb-5 z-index-10">
+          <div class="row align-items-center gx-5 pb-5 mb-5">
+            <div class="col-lg-6">
+              <h3 class="h4 text-uppercase text-shadow text-primary lead-poppins-hero hidden-from-bottom-first">
+                Hi, my name is
+              </h3>
+              <h1 class="text-shadow heroName hidden-from-bottom-second">Steve Szymanski
+              </h1>
+              <div class="">
+                <p class="h4 fw-light lead-poppins-hero hidden-from-bottom-third">Full-Stack Web Developer</p>
+                <h5 class="lead-poppins-hero mb-4 hidden-from-bottom-fourth">
+                  <span class="">.NET </span>
+                  <span class="">|| C# </span>
+                  <span class="">|| SQL </span>
+                  <span class="">|| Angular </span>
+                  <span class="">|| React</span>
+                </h5>
+                <div class="hidden-from-bottom-fifth">
+                  <button
+                    type="button"
+                    class="gradientHeroButton mt-1 me-1"
+                    onclick="location.href='#projects'"
+                    ><strong>Projects</strong>
+                  </button>
+                  <button
+                    type="button"
+                    class="hireMeButton mt-1 mt-1"
+                    onclick="location.href='#contact'"
+                    ><strong>Let's Connect</strong>
+                  </button>
+                </div>
+              </div>
+              </div>
+              <div class="mockup col-lg-6 d-none d-lg-block hidden-from-bottom-sixth">
+                <div id="carouselExampleFade" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                      <a href="#loanShark">
+                        <img src="/img/WaveyDashboardMockup.PNG
+                          " class="ms-lg-5" title="Wavey Bug Tracker" height="310px">
+                      </a>
+                    </div>
+                    <div class="carousel-item ms-3 ps-1">
+                      <a href="#chefByte">
+                        <img src="/img/ChefByteiPadCropped.png" title="Chef Byte" height="310px">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="#connectPro">
+                        <img src="/img/MacBook Air_HeroLogoConnectPro.png" title="Connect Pro" height="310px">
+                      </a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION-->
+      <section class="row" id="about" style="background: #191428;">
+        <div class="col-lg-11 ms-lg-5 ps-lg-5">
+          <div class="row">
+            <div class="col-lg-5 mb-3">
+              <section class="about py-2">
+                <div class="container py-5 text-center">
+                  <header>
+                    <div class="row">
+                      <div class="col textAnimation-wrapper">
+                        <p class="text-uppercase h3 text-500 text-start text-primary ms-lg-3">About Me</p>
+                        <h4 class="text-start text-light ms-lg-3">Who Am I?</h4>
+                      </div>
+                    </div>
+                    <hr class="ms-lg-2 me-lg-2 hr">
+                    <div class="row">
+                      <div class="col-lg-12 mx-auto">
+                        <p class="lead-poppins text-light text-start mt-2 ms-lg-3 mt-lg-4 hidden-from-bottom">
+                          Hi! My name is Steve and I build beautiful full-stack web applications with ASP.NET. I am always learning. I love to solve coding business problems and collaborate with great people.
+                        </p>
+                        <p class="lead-poppins text-light text-start ms-lg-3 mt-lg-3 hidden-from-bottom">
+                          I am committed to mastering my craft. After college I completed Coder Foundry's Coding Bootcamp and am currently earning my Master of Science in Cybersecurity from Grand Canyon University. 
+                          <p class="lead-poppins text-light text-start ms-lg-3 pb-lg-1 hidden-from-bottom">Want to see more? Try out my <a href="#projects">projects</a> or view my GitHub repository
+                          <a href="https://github.com/StevesGitRepo" title="Steve's Git Repo" target="_blank"> here!</a>
+                        </p>
+                      </div>
+                    </header> 
+                      <div class="row">
+                        <div class="d-flex text-start ms-lg-3 pt-lg-1 tech ">
+                          <button
+                            type="button"
+                            class="hireMeButton mt-2"
+                            onclick="location.href='#contact'"
+                            ><strong>Let's Connect</strong>
+                          </button>
+                        </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!--  TECHNOLOGY SECTION-->
+            <div class="col-lg-7 bg-gradient-from-left mb-3 py-5 border-start border-2 border-primary">
+              <div class="container py-2">
+                <header class="mb-4">
+                  <p class="sectionHeader text-uppercase text-primary h3 text-start text-500 ms-lg-1">Technology</p>
+                  <h4 class="text-start text-light ms-lg-1 mb-4">Tools of the trade</h4>
+                  <hr class="hr">
+                </header>
+              </div>
+              <div class="">
+                <div class="row ms-2 ms-md-5 ps-md-4 ms-lg-0 mb-lg-5 hidden-from-bottom-alt">
+                    <p class="col-12 text-light lead-poppins mt-lg-2 mb-4 mb-lg-4 pb-lg-1">I am currently working with the following tech stack:</p>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg" width="80" title="ASP.NET"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="80" title="C-Sharp"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="80" title="PostgreSQL"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="80" title="Angular"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80" title="React"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img href="https://cdnlogo.com/logo/blazor_66569.html" src="https://www.cdnlogo.com/logos/b/67/blazor.svg" width="90" title="Blazor"/>
+                    </div>
+                    <!-- <div class="col-lg-2"></div> -->
+                  </div> 
+                  <div class="row ms-2 ms-md-5 ps-md-4 ms-lg-0 mb-lg-3 pb-lg-1 hidden-from-bottom-beta">
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80" title="Javascript"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80" title="Typescript"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80" title="HTML5"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80" title="CSS3"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80" title="Bootstrap"/>
+                    </div>
+                    <div class="col-4 col-lg-2 mb-4 image-hover">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" class="github" width="80" title="GitHub"/>
+                    </div>
+                  </div>
+              </div>
+                <button class="gradientHireMeButton mt-2 ms-4 ms-md-5 mb-4 mb-lg-0 mt-4 mt-lg-0 ms-lg-4" 
+                  data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>About The Tech</strong></button>
+                  <div class="modal fade" id="exampleModal" data-bs-keyboard="false" tabindex="1" aria-labelledby="exampleModalLabel" aria-="true">
+                    <div class="modal-dialog">
+                      <h5 class="modal-title lead" id="exampleModalLabel"></h5>
+                      <div class="modal-body lead-poppins shadow bg-gradient rounded">
+                        <div class="">
+                        <div class="row mt-3">
+                          <div class="col-2"></div>
+                          <div class="col-8 ms-md-2 ms-lg-1">
+                            <div class="row d-flex justify-content-around">
+                              <div class="col-3 modal-image pb-2 ps-5 ps-md-2 pb-lg-0">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg" width="50" title="ASP.NET"/>
+                              </div>
+                              <div class="col-3 modal-image pb-2 ps-md-2 pb-lg-0">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="50" title="C-Sharp"/>
+                              </div>
+                              <div class="col-3 ps-5 ps-md-2 modal-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="50" title=".NET CORE"/>
+                              </div>
+                              <div class="col-3 ps-md-2 modal-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="50" title="PostgreSQL"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-2"></div>
+                        </div>
+                        <hr class="mx-4 border-top border-2 border-primary">
+                        <p class="mx-4 mb-5 text-light">The .NET family of ASP.NET, C#, and Model View Controller(MVC) creates a powerful framework to build full-stack web applications. PostgreSQL is an open-sourced, object-relational database.</p>
+                      </div>
+                      <div class="mt-3 mb-3">
+                        <div class="row mt-3">
+                          <div class="col-2"></div>
+                          <div class="col-8 ms-md-2 ms-lg-1">
+                            <div class="row d-flex justify-content-between">
+                              <div class="col-3 modal-image pb-2 ps-5 ps-md-2 pb-lg-0">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="50" title="Tailwind CSS"/>
+                              </div>
+                              <div class="col-3 modal-image pb-3 mb-1 ps-md-2 pb-lg-">
+                                 <img href="https://cdnlogo.com/logo/blazor_66569.html" src="https://www.cdnlogo.com/logos/b/67/blazor.svg" width="60" title="Blazor"/>
+                              </div>
+                              <div class="col-3 ps-5 ps-md-2 modal-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="50" title="React"/>
+                              </div>
+                              <div class="col-3 ps-md-2 modal-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="50" title="Bootstrap"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-2"></div>
+                        </div>
+                        <hr class="mx-4 border-top border-2 border-primary">
+                        <p class="mx-4 mb-5 text-light">Angular, Blazor, and React all excel at single page applications (SPA's).  Both tools provide powerful page manipuation without the need to refresh the HTML page. Bootstrap provides in-line CSS styling and I create all of my branding with Canva.</p>
+                      </div>
+                      <div class="">
+                        <div class="row mt-3 mt-md-4 mt-lg-3">
+                          <div class="col-2"></div>
+                          <div class="col-8 ms-md-2 ms-lg-1">
+                            <div class="row d-flex justify-content-between">
+                              <div class="col-3 modal-image pb-2 ps-5 ps-md-2 pb-lg-0">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="50" title="Javascript"/>
+                              </div>
+                              <div class="col-3 modal-image pb-2 ps-md-2 pb-lg-0">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" width="50" title="HTML5"/>
+                              </div>
+                              <div class="col-3 ps-5 ps-md-2 modal-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" width="50" title="CSS3"/>
+                              </div>
+                              <div class="col-3 ps-md-2 modal-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" title="Javascript"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-2"></div>
+                        </div>
+                        <hr class="mx-4 border-top border-2 border-primary">
+                        <p class="text-light mx-4">The building blocks of the web. HTML, CSS, and Javascript are programming languages that construct, style, and define behavior on web applications. TypeScript adds types to traditional JS.</p>
+                        <button type="button" class="btn-close btn-close-white mb-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PORTFOLIO SECTION-->
+      <section class="overflow" id="projects" style="background: #191428;">
+          <div id="loanShark"></div>
+        <div class="container py-4 mb-lg-4 text-lg-center">
+            <header class="mb-2">
+              <p class="text-uppercase text-lg-start h3 text-500 text-primary ms-lg-5">Portfolio</p>
+              <h4 class="text-lg-start text-light ms-lg-5 pb-1">Check out my work!</h4>
+            </header>
+            <!-- Wavey -->
+          <div class="mt-lg-2 mt-5 pt-lg-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-11 ms-lg-5 ps-lg-2">
+              <div class="row card-header projectCard">
+                <div class="col-12 col-md-6 col-lg-6 square2-wrapper">
+                  <div class="row">
+                    <div class="col-md-1 col-lg-1"></div>
+                      <div class="col-md-9 col-lg-9">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="square2 square2-transition ps-lg-2 mt-4 mt-lg-5">
+                              <a
+                              class="d-block reset-link position-relative shadow"
+                              href="https://hotbug-production.up.railway.app/"
+                              target="_blank"
+                              >
+                              <img
+                              class="card img-fluid rounded-3"
+                              src="/img/WaveyCentered.png"
+                              alt="Wavey Bug Tracker"
+                              title="Click to access Wavey Bug Tracker"
+                              >
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 col-md-6 mt-md-4 mt-4 mt-lg-0 hidden-from-bottom">
+                  <h4 class="text-lg-start text-secondary mt-lg-4 pt-lg-2">FEATURED:<span><a href="https://hotbug-production.up.railway.app/" target="_blank" title="Wavey Bug Tracker"><img class="ms-2 pt-1 image-hover" src="/img/WaveyPortfolioTitle.png" width="92" target="_blank"></a></span></h4>
+                  <div class="">
+                    <p class="text-start text-light lead-poppins me-lg-0 pe-lg-0">A bug tracker built to scale. Create companies, projects, assign roles, and manage service tickets.</p>
+                    <p class="text-start text-light lead-poppins me-lg-0 pe-lg-0 pb-2 pb-lg-0 mb-lg-3">TECH STACK: Built with ASP.NET, C#, MVC, PostgreSQL, Javascript, HTML and Bootstrap CSS.</p>
+                  </div>
+                  <div class="mockup d-none d-lg-block mt-lg-3 text-start hidden-from-bottom">
+                      <img class="mb-lg-2 pb-lg-3 me-lg-5 pe-lg-1 mt-lg-1 image-hover" src="/img/WaveyPortfolioMock.png" width="234">
+                      <img class="mb-lg-2 pb-lg-3 ms-lg-2 mt-lg-1 image-hover" src="/img/WaveyBeachMockup.png" width="110"/></div>                
+                  </div>
+                  <!-- ROW ENDS -->
+                  <div class="col-12 ms-2 pb-0">
+                    <img class="d-md-none d-block ms-4 ps-4 pb-4" src="/img/WaveyBeachMockup.png" width="260"/>               
+                  </div>
+                  <div class="mb-2 mb-md-0 mt-4 mt-md-4">
+                    <a class="d-flex justify-content-center" href="https://hotbug-production.up.railway.app/" target="_blank" style="text-decoration: none;">
+                        <button class="gradientHotbugButton ms-lg-5 me-lg-5 mb-4 w-sm-50" style="font-weight: bold;">Catch the Wave!</button>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="pb-4"></div>
+          <!--Chef Byte-->
+          <div id="chefByte"></div>
+          <div class="mt-lg-2 mt-2 mb-lg-2 pt-lg-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-11 ms-lg-5 ps-lg-2 mt-lg-4 mb-lg-5">
+              <div class="row card-header projectCard overflow">
+                <div class="col-12 col-md-6 col-lg-6 square-wrapper">
+                  <div class="row mb-lg-5">
+                    <div class="col-md-1 col-lg-1"></div>
+                    <div class="col-md-9 col-lg-9 mt-lg-3">
+                      <div class="square square-transition mt-4">
+                        <a
+                        class="d-block position-relative text-shadow"
+                        href="https://chefbyte-production.up.railway.app/"
+                        target="_blank"
+                        ><img
+                        class="card img-fluid rounded-3"
+                        src="/img/ChefBytePinkLogo.png"
+                        alt="Chef Byte"
+                        title="Try Chef Byte!"
+                        />
+                        <div
+                        class="position-absolute d-flex align-items-center"
+                        >
+                      </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-4 mt-md-0 mb-4 hidden-from-bottom">
+                  <h4 class="text-lg-start text-secondary mt-4 mt-lg-4 pt-lg-3">FEATURED: <span><a href="https://chefbyte-production.up.railway.app/" target="_blank" title="Chef Byte"><img class="image-hover text-shadow" src="/img/ChefByteTextCrop.png" width="120" ></a></span></h4>
+                  <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                      <div class="square3-wrapper">
+                        <div class="square3 square3-transition mb-lg-4 pb-lg-2">
+                          <p class="text-start text-light lead-poppins me-lg-5 pe-lg-5">Powered by OpenAI.  Add ingredients and Chef Byte will return multiple recipes and dish images!</p>
+                          <p class="text-start text-light lead-poppins me-lg-5 pe-lg-5"><strong>TECH STACK:</strong>
+                            Blazor Web Assembly, OpenAI API, ChatGPT, DALL-E, REST API, ASP.NET, C#, Javascript
+                          </p> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mockup d-none d-lg-block text-start hidden-from-bottom">
+                        <img class="mb-lg-1 me-lg-4 pb-lg-0 image-hover" src="/img/cbDinMock.png" width="262">
+                        <img class="mb-lg-1 ms-lg-3 pb-lg-0  image-hover" src="/img/ChefByteMobileMockup2.png" width="85"/></div>                </div>
+                    </div>
+                    <div class="col-12 ms-4 ps-4 pb-1">
+                      <a>
+                        <img class="d-md-none ms-4 ps-2 mb-5" src="/img/ChefByteMobileMockup2.png" width="212"/>
+                      </a>
+                    </div>
+                    <div class="mb-2 mb-md-0 mt-0 mt-md-4 mt-lg-0">
+                      <a class="d-flex justify-content-center" href="https://chefbyte-production.up.railway.app/" target="_blank" style="text-decoration: none;">
+                        <button class="gradientChefByteButton ms-lg-5 me-lg-5 mb-4 w-sm-50" style="font-weight: bold;">Try Chef Byte</button>
+                      </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="pb-4"></div>
+          <!-- Connect Pro -->
+          <div id="connectPro"></div>
+          <div class="mt-lg-2 mt-2 pt-lg-1">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-11 ms-lg-5 ps-lg-2 mt-lg-4 mb-lg-5">
+              <div class="row card-header projectCard overflow">
+                <div class="col-12 col-md-6 col-lg-6 square-wrapper">
+                  <div class="row mb-lg-5">
+                    <div class="col-md-1 col-lg-1"></div>
+                    <div class="col-md-9 col-lg-9 mt-lg-3">
+                      <div class="square square-transition mt-4">
+                        <a
+                        class="d-block position-relative text-shadow"
+                        href="https://steveszymanski-connectpro.up.railway.app/"
+                        target="_blank"
+                        ><img
+                        class="card img-fluid rounded-3"
+                        src="/img/ConnectProSquareFinal.png"
+                        alt="ConnectPro"
+                        title="Try Connect Pro here"
+                        />
+                        <div
+                        class="position-absolute d-flex align-items-center"
+                        >
+                      </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-4 mt-md-0 mb-4 hidden-from-bottom">
+                  <h4 class="text-lg-start text-secondary mt-4 mt-lg-4 pt-lg-3">FEATURED: <span><a href="https://steveszymanski-connectpro.up.railway.app/" target="_blank" title="Connect Pro"><img class="mb-2 image-hover text-shadow" src="/img/ConnectProTextCropped - Edited2.png" width="140" ></a></span></h4>
+                  <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                      <div class="square3-wrapper">
+                        <div class="square3 square3-transition mb-lg-4 pb-lg-2">
+                          <p class="text-start text-light lead-poppins me-lg-5 pe-lg-5">A database-driven address book. Create, categorize, and email your contacts.  Built with ASP.NET.</p>
+                          <p class="text-start text-light lead-poppins me-lg-5 pe-lg-5"><strong>TECH STACK:</strong>
+                            ASP.NET, C#, Model View Controller, PostgreSQL, JavaScript, Bootstrap, HTML and CSS.
+                          </p> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mockup d-none d-lg-block text-start hidden-from-bottom">
+                        <img class="mb-lg-1 me-lg-4 pb-lg-0 image-hover" src="/img/iMacConnectProCropped.png" width="240">
+                        <img class="ms-lg-0 mb-lg-1 ms-lg-0 pb-lg-0 image-hover" src="/img/iPhone14BlankCPCropped.png" width="150"/></div>                </div>
+                    </div>
+                    <div class="col-12 ms-4 ps-2 pb-0">
+                      <a>
+                        <img class="d-md-none d-block pb-2 pe-4" src="/img/iPhone14BlankCPCropped.png" width="320"/>
+                      </a>
+                    </div>
+                    <div class="mb-2 mb-md-0 mt-0 mt-md-4 mt-lg-0">
+                      <a class="d-flex justify-content-center" href="https://steveszymanski-connectpro.up.railway.app/" target="_blank" style="text-decoration: none;">
+                        <button class="gradientAboutButton ms-lg-5 me-lg-5 mb-4 w-sm-50" style="font-weight: bold;">Try Connect Pro</button>
+                      </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- CODING CHALLENGES-->
+      <section class="portfolio overflow" id="portfolio" style="background-image: linear-gradient(180deg, #191428, #250d5c) !important">
+          <div class="container py-5">
+            <header class="text-center">
+              <p class="text-uppercase text-primary text-start h3 text-500 ms-lg-5">CODE+</p>
+              <h4 class="text-start text-light ms-lg-5">Notable Coding Challenges</h4>
+              <hr class="ms-lg-5 me-lg-5 hr">
+            </header> 
+            <div class="row">
+              <div class="col-lg-3 ms-lg-5 mb-5 me-lg-5 lead-poppins" style="color: var(--heroHireMe)">ABOUT:
+                <div class="lead-poppins text-light">
+                  These multi-page applications showcase coding challenges that reverse strings, use conditional statements, for-loops, and arrays. The sites deploy through Netlify and the JS code is displayed with Prism.
+                </div>
+                <div class="row mt-3">
+                  <div class="col-3 mt-4 pt-4 section-head" style="color: var(--heroHireMe)">TECH:
+                    <div class="col-12 mb-1 d-flex justify-content-between">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="me-2 mt-2  image-hover" width="45" title="Typescript"/>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="me-2 mt-2  image-hover" width="45" title="Javascript"/>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="me-2 mt-2  image-hover" width="45" title="HTML5"/>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="me-2 mt-2  image-hover" width="45" title="CSS3"/>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="mt-2  image-hover" width="55" title="Bootstrap"/>
+                    </div>
+                </div>
+                <div class="text-light mt-1">
+                  Built with JavaScript, HTML, CSS, and Bootstrap. Each application accepts input parameters and returns values based on the functions involved. Enjoy!
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-8">
+                  <div class="row row-cols-lg-4 row-cols-md-2 g-4 d-flex justify-content-center me-lg-4 mb-5">
+                    <div class="col-lg-4 col-6 hidden-from-bottom">
+                      <a
+                      class="d-block reset-link position-relative shadow card"
+                      href="#portfolioModal1"
+                      data-bs-toggle="modal"
+                      data-target="#portfolioModal1"
+                      ><img
+                      class="img-fluid rounded-3"
+                      src="/img/Code Challenges V2.png"
+                      alt="item"
+                      />
+                      <div
+                      class="dark-overlay dark-overlay-dense hover-overlay-full position-absolute d-flex align-items-center"
+                      >
+                      <div class="overlay-content w-100 p-4 card card-coding rounded-3">
+                          <p class="mb-0">
+                            These sites showcase HTML, CSS, Typescript, & Javascript.
+                          </p>
+                        </div>
+                      </div></a
+                      >
+                    </div>
+                    <div class="col-lg-4 col-6 hidden-from-bottom-alt">
+                      <a
+                        class="d-block reset-link shadow position-relative card"
+                        href="https://steveszymanski-loanshark.up.railway.app/Home/App"
+                        target="_blank"
+                        ><img
+                          class="img-fluid rounded-3"
+                          src="/img/LoanSharkNeonSquare.png"
+                          alt="item"
+                        />
+                        <div
+                          class="dark-overlay dark-overlay-dense hover-overlay-full position-absolute d-flex align-items-center"
+                          >
+                          <div class="overlay-content w-100 p-4 card card-loanShark">
+                            <h3>LOAN SHARK</h3>
+                            <p class="mb-0">Mortgage loan interest calculator!</p>
+                          </div>
+                        </div>
+                        </a>
+                    </div>
+                    <!-- FIZZ BUZZ-->
+                    <div class="col-lg-4 col-6 hidden-from-bottom-beta">
+                      <a
+                        class="d-block reset-link position-relative shadow card"
+                        href="https://steveszymanski-fizzbuzz.netlify.app/app"
+                        target="_blank"
+                        ><img
+                        class="img-fluid rounded-3"
+                        src="/img/FIZZ BUZZ Card.png"
+                        alt="item"
+                        />
+                        <div
+                          class="dark-overlay dark-overlay-dense hover-overlay-full position-absolute d-flex align-items-center"
+                        >
+                        <div class="overlay-content w-100 p-4 card card-fizzBuzz">
+                          <h3>FIZZ BUZZ</h3>
+                          <p class="mb-0">When it counts, you FIZZ BUZZ!</p>
+                        </div>
+                      </div></a
+                      >
+                    </div>
+                    <!-- TACO CAT-->
+                    <div class="col-lg-4 col-6 hidden-from-bottom">
+                      <a
+                      class="d-block reset-link position-relative shadow card"
+                      href="https://steveszymanski-tacocat.netlify.app/app"
+                      target="_blank"
+                        ><img
+                        class="img-fluid rounded-3"
+                        src="/img/Tacocat Card Logo Dark.png"
+                        alt="Taco cat"
+                        />
+                        <div
+                        class="dark-overlay dark-overlay-dense hover-overlay-full position-absolute d-flex align-items-center"
+                        >
+                        <div class="overlay-content w-100 p-4 card card-tacoCat">
+                          <h3>TACO CAT</h3>
+                          <p class="mb-0">Taco cat. Race car. Palindromes!</p>
+                        </div>
+                      </div></a
+                      >
+                    </div>
+                    <!-- REWIND-->
+                    <div class="col-lg-4 col-6 hidden-from-bottom-alt">
+                      <a
+                      class="d-block reset-link position-relative shadow card"
+                      href="https://steveszymanski-rewind.netlify.app/app"
+                      target="_blank"
+                        ><img 
+                          class="img-fluid rounded-3"
+                          src="/img/RewindCardTilt.png"
+                          alt="item"
+                          />
+                          <div
+                          class="dark-overlay dark-overlay-dense hover-overlay-full position-absolute d-flex align-items-center"
+                          >
+                          <div class="overlay-content w-100 p-4 card card-rewind">
+                            <h3>REWIND</h3>
+                            <p class="mb-0">Rewind the phrase, play it back!</p>
+                          </div>
+                        </div></a
+                        >
+                    </div>  
+                      <!-- 100 STEPS CARD-->
+                      <div class="col-lg-4 col-6 hidden-from-bottom-beta">
+                        <a
+                        class="d-block reset-link position-relative shadow card"
+                        href="https://steveszymanski-100steps.netlify.app/app"
+                        target="_blank"
+                        ><img
+                        class="img-fluid rounded-3"
+                        src="/img/100StepsCardGreen.png"
+                        alt="item"
+                        />
+                        <div
+                        class="dark-overlay dark-overlay-dense hover-overlay-full position-absolute d-flex align-items-center"
+                        >
+                        <div class="overlay-content w-100 p-4 card card-100Steps">
+                          <h3>100 STEPS</h3>
+                          <p class="mb-0">Traverse one-hundred steps, and beyond...</p>
+                        </div>
+                      </div>
+                        </a
+                        >
+                      </div>
+                  </div>
+              </div>
+            <div ></div>
+            </div>
+          </div>
+      </section>
+        <!-- DIVIDER SECTION-->
+      <section class="bg-gradient text-white py-5" id="divider">
+        <div class="container py-5 text-left mt-4 mb-4">
+          <div class="row py-5">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 py-5 hidden-from-bottom">
+              <p class="leadQuote pt-5"><em>
+                “Creativity is intelligence having fun.”</em>
+              </p>
+                <h3 class="text-end heroName me-1 mb-5 pe-1 pb-5 image-hover text-primary"><em>— Albert Einstein</em></h3>
+              </div>
+              <div class="col-lg-4"></div>
+          </div>
+        </div>
+        <!-- <hr class="hr"> -->
+      </section>
+        <!-- CONTACT SECTION-->
+      <section class="overflow" style="background: #191428;" id="contact">
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 ms-lg-2 me-lg-5 pe-lg-5">
+            <div class="container">
+              <div class="row gy-lg-5">
+                <!-- Text-->
+                <div class="col-md-5">
+                  <header>
+                    <p class="text-uppercase h3 text-500 text-primary hidden-from-bottom">Contact Me</p>
+                    <div class="hidden-from-bottom">
+                      <h4 class="text-light">Let's connect!</h4>
+                      <hr class="hr">
+                    </div>
+                    <h4 class="lead-poppins text-light me-md-1 mb-3 hidden-from-bottom">I am open to discuss new opportunities. Feel free to contact me and I will reply as soon as possible.</h4>
+                    <h4 class="lead-poppins text-light mt-3 hidden-from-bottom">Email:
+                      <a href="mailto: steve.k.szymanski@gmail.com">
+                        steve.k.szymanski@gmail.com
+                      </a>
+                    <h4 class="lead-poppins text-light mt-3 hidden-from-bottom">LinkedIn:
+                      <a href="https://www.linkedin.com/in/steve-szymanski-245849238/" target="_blank">
+                        Visit LinkedIn
+                      </a>
+                    </h4>
+                    <h4 class="lead-poppins text-light mt-3 hidden-from-bottom">GitHub:
+                      <a href="https://github.com/StevesGitRepo" target="_blank">Visit GitHub</a>
+                    </h4>
+                  </header>
+                  <ul class="list-inline ">
+                    <div class="row me-lg-5 gx-4">
+                      <div class="col">
+                      </div>
+                    </div>  
+                    </li>
+                  </ul>
+                </div>
+                <!-- Form-->
+                <div class="form col-md-7 mt-3 mt-lg-5 bg-gradient-from-left hidden-from-bottom-alt">
+                  <form
+                    name="contact"
+                    data-netlify="true"
+                    class="needs-validation tech"
+                    id="contact-form"
+                    action="#"
+                    novalidate
+                    data-netlify-recaptcha="true"
+                  >
+                    <div class="form-group position-relative mb-4 mt-3">
+                      
+                      <input
+                        class="form-control-material shadow-sm lead-poppins"
+                        id="username"
+                        type="text"
+                        name="username"
+                        required="required"
+                        placeholder=" Name"
+                      />
+                      <span
+                      class="rounded text-sm px-2 py-1 text-white bg-success-light valid-feedback"
+                        >Looks good!</span
+                      ><span
+                        class="rounded text-sm px-2 py-1 text-white bg-danger-light invalid-feedback"
+                        >Please type your name</span
+                      >
+                    </div>
+                    <div class="form-group position-relative mb-4">
+                      <input
+                        class="form-control-material shadow-sm lead-poppins"
+                        id="email"
+                        type="email"
+                        name="email"
+                        required="required"
+                        placeholder=" Email"
+                      />
+                      <span
+                        class="rounded text-sm px-2 py-1 text-white bg-success-light valid-feedback"
+                        >Looks good!</span
+                      ><span
+                        class="rounded text-sm px-2 py-1 text-white bg-danger-light invalid-feedback"
+                        >Please type your email address</span
+                      >
+                    </div>
+                    <div class="form-group position-relative mb-4">
+                      <textarea
+                        class="form-control-material mb-0 shadow-sm lead-poppins"
+                        id="message"
+                        name="message"
+                        required="required"
+                        placeholder=" Message"
+                      ></textarea>
+                    <span
+                        class="rounded text-sm px-2 py-1 text-white bg-success-light valid-feedback"
+                        >Looks good!</span
+                      ><span
+                        class="rounded text-sm px-2 py-1 text-white bg-danger-light invalid-feedback"
+                        >Please type your message</span
+                      >
+                    </div>
+                    <div class="form-group mb-3">
+                      <div class="mb-3" data-netlify-recaptcha="true"></div>
+                      <input
+                      class="gradientHireMeButton px-5 mt-1 mb-2 lead-poppins shadow-sm"
+                      type="submit"
+                        value="Send Message"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+      </section>
+    </div>
+    <!-- FOOTER SECTION-->
+    <footer>
+      <div class="" style="background: linear-gradient(180deg, #191428, #050010) !important">
+        <div class="border-top border-primary border-2 mb-4"></div>
+        <div class="container text-center py-3">
+          <div class="row">
+            <div class="col">
+              <img
+              class="img-fluid mb-3"
+              src="/img/LogoSoftWhite.png"
+              alt="Designer"  
+              width="45"
+              />
+              <img
+              class="img-fluid mb-3"
+              src="/img/steveLogoSoftWhiteBlue.png"
+              alt="Designer"
+              width="45"
+              />
+              <img
+              class="img-fluid mb-3"
+              src="/img/steveLogoGreyBlue2.png"
+              alt="Designer"  
+              width="45"
+              />
+              <img
+              class="img-fluid mb-3"
+              src="/img/steveLogoGreyBlue.png"
+              alt="Designer"  
+              width="45"
+              />
+              <img
+              class="img-fluid mb-3"
+              src="/img/steveLogoTriBaby2.png"
+              alt="Designer"  
+              width="45"
+              />
+              <img
+              class="img-fluid mb-3"
+              src="/img/steveLogoTriBlueMid2.png"
+              alt="Designer"  
+              width="45"
+              />
+              <img
+              class="img-fluid mb-3"
+              src="/img/steveLogoBluey.png"
+              alt="Designer"
+              width="45"
+              >
+            </div>
+          </div>
+          <!-- Site Links-->
+          <ul class="site-links list-inline mt-4 text-white">
+            <li class="list-inline-item">
+              <a class="footer-link text-uppercase" href="#">Top</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="footer-link text-uppercase" href="#about">About Me</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="footer-link text-uppercase" href="#projects">Portfolio</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="footer-link text-uppercase" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="row mt-5">
+            <div class="col-6 text-light">
+              <div class="footerContact footerText text-start mt-3">
+                <span class="">&copy;2023</span>
+                Steve Szymanski
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row text-end pe-2">
+                <div class="col-5 col-lg-9"></div>
+                <div class="col-1 social">
+                  <a
+                  href="https://www.linkedin.com/in/steve-szymanski-245849238/"
+                  target="_blank"
+                  class=""
+                  ><i class="fab fa-linkedin fa-2x"></i
+                  ></a>
+                </div>
+                <div class="col-1 col-lg-0"></div>
+                <div class="col-1 social">
+                  <a href="https://github.com/StevesGitRepo" 
+                    target="_blank"
+                    class=""
+                  ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+                <div class="col-2 col-lg-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="/js/site.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </div>
+  </body>
+  <style>
+    .loader {
+        -webkit-animation: load-out 1s;
+        animation: load-out 1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    
+    @-webkit-keyframes load-out {
+        from {
+            top: 0;
+            opacity: 1;
+        }
+    
+        to {
+            top: 100%;
+            opacity: 0;
+        }
+    }
+    
+    @keyframes load-out {
+        from {
+            top: 0;
+            opacity: 1;
+        }
+    
+        to {
+            top: 100%;
+            opacity: 0;
+        }
+    }
+    </style>
+</html>

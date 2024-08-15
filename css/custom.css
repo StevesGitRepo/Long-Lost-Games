@@ -1,0 +1,837 @@
+:root {
+  --heroHireMe: #77c4ff;
+  --ssLightGradBlueColor: #5ba3f8;
+  --ssDarkGradBlueColor: #2a166c;
+  --sectionHead: #7d6db7;
+  /* --projectCard: #787285; */
+  --projectCard: #2a283b;
+  --darkBackground: #250d5c;
+  --bsPrimary: #0D6EFD;
+  --hotbugWhite: #FFFFFF;
+  --hotbugLight: #E2EFFF;
+  --hotbugDark: #0F0944;
+  --chefBytePink: #FF00A8;
+  --chefBytePurple: #43025B;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--heroHireMe);
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--heroHireMe);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2b90d9;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+a:active {
+  text-decoration: none;
+  color: var(--heroHireMe);
+}
+
+.about {
+  min-height: 100vh;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(0deg, #191428, #250d5c) !important;
+}
+
+.bg-gradient-from-left {
+  background-image: linear-gradient(-90deg, #191428, #250d5c) !important;
+}
+
+.btn:hover {
+  color: #2a166c;
+  background: aliceblue;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+.projectCard {
+  background-color:#191428;
+  box-shadow:0px 0px 2px var(--heroHireMe);
+}
+
+.connectProBackground {
+  background-color: #bbd9f1;
+}
+
+.connectProButton {
+  border-radius: 50rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  color: aliceblue;
+  box-shadow: 0 0 6px 0 #002038df;
+  border: solid 3px;
+  background-image: linear-gradient(164deg, #4baefa, #003a66),
+    linear-gradient(164deg, #4baefa, #003a66);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  /* box-shadow: 2px 1000px 1px #f9eed4 inset; */
+}
+
+button.connectProButton:hover {
+  box-shadow: none;
+  color: white;
+  opacity: 0.9;
+  /* transition: 50ms; */
+}
+
+button.connectProButton:active {
+  opacity: 0.8;
+  transition: 100ms;
+}
+
+.loanSharkButton {
+  border-radius: .3rem;
+  padding: .5rem;
+  font-family: 'Raleway';
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  border: solid 0px;
+  background-image: linear-gradient(-39deg, #ff077f, #f970b2),
+  linear-gradient(-39deg, #ff077f, #f970b2);
+  background-clip: content-box, border-box;
+}
+
+.loanSharkButton:hover {
+  background: var(--projectCard);
+  color: #f970b2;
+  border: solid 0px var(--projectCard);
+  box-shadow: 0 0 5px 0 #f970b2;
+
+  /* transition: 100ms; */
+}
+
+.loanSharkButton:active {
+  transition: 100ms, ease-in-out;
+  color: #ff077f;
+  background: aliceblue;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-modal {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  opacity: 0;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-100Steps {
+  background-color: #0e8056;
+  color: #FFFFFF;
+}
+
+.card-coding {
+  background-color: #f6eaf8;
+  color: #560468;
+}
+
+.card-fizzBuzz {
+  background-color: #b2fbfe;
+}
+
+.card-loanShark {
+  background-color: rgb(16, 16, 16);
+  color: #ffb9e3;
+}
+
+.card-tacoCat {
+  background-color: #e10d0c;
+  color: #fae108;
+}
+
+.card-rewind {
+  background-color: #fcf5d6;
+  color: #ff0527;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 1rem);
+  padding-left: var(--bs-gutter-x, 1rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.devicon {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  transition-delay: 100ms;
+  position: absolute;
+  /* z-index: auto; */
+}
+
+.dropdown-item {
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .dropdown-item {
+    color: aliceblue;
+    font-size: large;
+  }
+  .dropdown-item-active {
+    background-color: none;
+  }
+  .dropdown-item:hover {
+    background: none;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-menu {
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.dropdown-menu > li {
+  display: inline-block;
+}
+
+@media (min-width: 600px) {
+  .dropdown-menu {
+    background: none;
+    border: none;
+  }
+  .dropdown-item {
+    color: aliceblue;
+    font-size: large;
+  }
+  .dropdown-item:hover {
+    background: none;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.footerBase {
+  background-color: rgb(7, 7, 7);
+}
+
+.footerText {
+  font-size: small;
+}
+
+.github {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(10deg) brightness(119%) contrast(119%);
+}
+
+.gradientButton {
+  border-radius: 50rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 0px transparent;
+  background-image: linear-gradient(-39deg, var(--darkBackground), var(--heroHireMe)),
+    linear-gradient(-39deg, var(--darkBackground), var(--heroHireMe));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.gradientButton:hover {
+  background: #5ba3f8;
+  color: white;
+  border: solid 0px var(--heroHireMe);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.gradientButton:active {
+  transition: 100ms ease-in-out;
+  color:#2a166c;
+  background: aliceblue;
+}
+
+button.gradientButton:hover {
+  background: var(--heroHireMe);
+  color: #2a166c;
+  border: solid 3px var(--heroHireMe);
+  box-shadow: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+button.gradientButton:active {
+  opacity: 0;
+  transition: 100ms;
+  background: aliceblue;
+}
+
+.gradientAboutButton {
+  border-radius: .3rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  border: solid 0px transparent;
+  background-image: linear-gradient(-39deg, var(--bsPrimary), var(--heroHireMe)),
+  linear-gradient(-39deg, var(--bsPrimary), var(--heroHireMe));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-decoration: none;
+  display: block;
+}
+
+button.gradientAboutButton:hover {
+  background: var(--projectCard);
+  color: var(--heroHireMe);
+  border: solid 0px var(--heroHireMe);
+  box-shadow: 0 0 6px 0 var(--heroHireMe);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+button.gradientAboutButton:active {
+  transition: 100ms ease-in-out;
+  color: #2a166c;
+  background: aliceblue;
+}
+
+.gradientChefByteButton {
+  border-radius: .3rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: solid 0px transparent;
+  background-image: linear-gradient(-39deg, var(--chefBytePink), var(--chefBytePurple)),
+  linear-gradient(-39deg, var(--chefBytePink), var(--chefBytePurple));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-decoration: none;
+  display: block;
+}
+
+button.gradientChefByteButton:hover {
+  background: var(--chefBytePurple);
+  color: var(--chefBytePink);
+  border: solid 0px var(--chefBytePurple);
+  box-shadow: 0 0 6px 0 var(--hotbugLight);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+button.gradientChefByteButton:active {
+  transition: 100ms ease-in-out;
+  color: #2a166c;
+  background: aliceblue;
+}
+
+
+.gradientHotbugButton {
+  border-radius: .3rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  border: solid 0px transparent;
+  background-image: linear-gradient(-39deg, var(--hotbugLight), var(--hotbugLight)),
+  linear-gradient(-39deg, var(--hotbugLight), var(--hotbugLight));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  text-decoration: none;
+  display: block;
+}
+
+button.gradientHotbugButton:hover {
+  background: var(--projectCard);
+  color: var(--hotbugLight);
+  border: solid 0px var(--hotbugLight);
+  box-shadow: 0 0 6px 0 var(--hotbugLight);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+button.gradientHotbugButton:active {
+  transition: 100ms ease-in-out;
+  color: #2a166c;
+  background: aliceblue;
+}
+
+
+button.gradientTechButton {
+  border-radius: 50rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  color: #2a166c;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 2px transparent;
+  background-image: linear-gradient(-39deg, var(--darkBackground), var(--heroHireMe))
+    linear-gradient(-39deg, var(--darkBackground), var(--heroHireMe));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  
+  /* box-shadow: 2px 1000px 1px #fff inset; */
+}
+
+button.gradientTechButton:hover {
+  background: var(--heroHireMe);
+  color: white;
+  border: solid 2px var(--heroHireMe);
+  box-shadow: none;
+  transition: none;
+  animation: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.gradientTechButton:active {
+  opacity: 0.7;
+  transition: 100ms;
+  color: var(--darkBackground);
+  background: aliceblue;
+  transition: none;
+  animation: none;
+}
+
+.gradientTechButton:after {
+  opacity: 0.7;
+  transition: 100ms;
+  color: var(--darkBackground);
+  background: aliceblue;
+  transition: none;
+  animation: none;
+}
+
+.gradientHeroButton {
+  border-radius: 50rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  color: #eaf8ff;
+  background: none;
+  border: solid 2px #eaf8ff;
+  box-shadow: 2px 2px 3px rgb(34, 29, 74);
+}
+
+.gradientHeroButton:hover {
+  background: #eaf8ff;
+  color: var(--ssDarkGradBlueColor);
+  border: solid 2px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.gradientHeroButton:active {
+  opacity: 0.8;
+  transition: 100ms;
+  color: var(--darkBackground);
+  background: #eaf8ff;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.gradientHireMeButton {
+  border-radius: 50rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--heroHireMe);
+  background: none;
+  border: solid 2px var(--heroHireMe);
+}
+
+.gradientHireMeButton:hover {
+  background: var(--heroHireMe);
+  box-shadow: 2px 2px 3px rgb;
+  color: #121018;
+  border: solid 2px;
+  box-shadow: 0px 1px 4px #235175;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+.gradientHireMeButton:active {
+  opacity: 0.8;
+  transition: 100ms;
+  color: #121018;
+  background: var(--heroHireMe);
+  box-shadow: 2px 2px 3px rgb;
+  text-shadow: none;
+}
+
+.hireMeButton {
+  border-radius: 50rem;
+  padding: 0.5rem;
+  font-family: 'Raleway';
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  color: rgb(247, 215, 25);
+  background: none;
+  border: solid 2px rgb(247, 215, 25);
+}
+
+.hireMeButton:hover {
+  background: rgb(247, 215, 25);
+  box-shadow: 2px 2px 3px rgb;
+  color: rgb(10, 10, 10);
+  border: solid 2px rgb(247, 215, 25);
+  box-shadow: 0px 1px 1px rgb(247, 215, 25);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+.hireMeButton:active {
+  opacity: 0.8;
+  transition: 100ms;
+  color: rgb(10, 10, 10);
+  background: rgb(247, 215, 25);
+  box-shadow: 2px 2px 3px rgb;
+  text-shadow: none;
+}
+
+.hero {
+  /* position: relative; */
+  min-height: 95px;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    min-height: 95vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: 95vh;
+  }
+}
+
+.hero::before {
+  content: 'Portfolio';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 22rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: Arial, sans-serif;
+  color: #000;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+@media (max-width: 767.98px) {
+  .hero::before {
+    font-size: 15rem;
+  }
+}
+
+.heroName {
+  color: #eaf8ff;
+}
+
+@media (min-width: 481px) {
+  hide-on-desktop {
+    display: none;
+  }
+}
+
+.hr {
+  background-image: linear-gradient(-90deg, #2a166c, var(--heroHireMe)) !important;
+}
+
+.image-hover:hover {
+  transform: scale(1.012);
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.leadColorFrost {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #eaf8ff;
+}
+
+.lead-poppins {
+  font-size: 1.1rem;
+  font-weight: 200;
+  font-family: 'Poppins';
+}
+
+.lead-poppins-hero {
+  font-size: 1.3rem;
+  font-weight: 200;
+  font-family: 'Poppins';
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.logo:active {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .dropdown-item {
+    color: aliceblue;
+    font-size: large;
+  }
+  .dropdown-item-active {
+    background-color: none;
+  }
+  .dropdown-item:hover {
+    background: none;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 600px) {
+  .dropdown-menu {
+    background: none;
+    border: none;
+  }
+  .dropdown-item {
+    color: aliceblue;
+    font-size: large;
+  }
+  .dropdown-item:hover {
+    background: none;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-image {
+    width: 50%;
+  }
+}
+
+.navbar {
+  display: block;
+  justify-content: space-between;
+  padding: 0.1rem 0.5rem;
+  background: #250d5c;
+  color: #eaf8ff;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 200ms ease;
+  /* z-index: 10; */
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: block;
+    justify-content: space-between;
+    background: #250d5c;
+    color: #fff;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.99;
+  }
+}
+
+.navbar-background {
+  background-color: #f8e6b8;
+}
+
+.navbar-button {
+  display: block;
+  padding: 0.8rem 0.7rem;
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.navbar-button:hover {
+  color: white;
+  
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-shadow:0px 0px 4px rgb(5, 1, 26);
+}
+
+.navbar-button:active {
+  opacity: 0.8;
+}
+
+.navbar-expand {
+  display: block;
+  justify-content: space-between;
+  padding: 0.1rem 0.5rem;
+  background: #250d5c;
+  color: #eaf8ff;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 200ms ease;
+  z-index: 0;
+}
+
+@media (max-width: 600px) {
+  .navbar-expand {
+    display: block;
+    justify-content: space-between;
+    background: #250d5c;
+    color: #fff;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.99;
+  }
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  color: white;
+  background-image: white;
+}
+
+.navbar-toggler-icon:hover {
+  color: #5ba3f8;
+}
+
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: inherit;
+  flex-wrap: inherit;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.overflow-visible {
+  overflow: visible !important;
+}
+
+.overflow-scroll {
+  overflow: scroll !important;
+}
+
+.react-dark {
+  background-color: #042a54;
+}
+
+.section-head {
+  color: var(--sectionHead);
+}
+
+.social > a {
+  padding-right: 0rem;
+  color: linear-gradient(-39deg, #110047, #3190d9) !important;
+}
+
+.social > a:hover {
+  color: white;
+}
+
+.social > a:active {
+  color: aliceblue;
+}

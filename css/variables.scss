@@ -1,0 +1,7 @@
+@mixin transparent-navbar($background-x: $navbar-background-x) {
+  background: none;
+}
+
+.custom-navbar {
+  @include transparent-navbar();
+}
